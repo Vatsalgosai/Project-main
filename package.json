@@ -15,12 +15,13 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "connect-mongodb-session": "^2.4.1",
     "ejs": "^3.1.9",
     "express": "^4.16.3",
     "express-handlebars": "^7.0.4",
-    "fix": "^0.0.3",
+    "express-session": "^1.17.3",
     "mongodb": "^3.7.3",
-    "mongoose": "^7.0.3",
+    "mongoose": "^5.13.16",
     "mysql2": "^1.6.1",
     "pug": "^3.0.2",
     "sequelize": "^6.30.0"
