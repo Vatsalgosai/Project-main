@@ -18,8 +18,9 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
-    "connect-mongodb-session": "^2.4.1",
+    "connect-mongodb-session": "^3.1.1",
     "csurf": "^1.11.0",
+    "dotenv": "^16.0.3",
     "ejs": "^3.1.9",
     "express": "^4.16.3",
     "express-handlebars": "^7.0.4",
@@ -27,6 +28,8 @@
     "mongodb": "^3.7.3",
     "mongoose": "^5.13.16",
     "mysql2": "^1.6.1",
+    "nodemailer": "^6.9.1",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "pug": "^3.0.2",
     "sequelize": "^6.30.0"
   }
