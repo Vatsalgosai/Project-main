@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const fs = require("fs");
 const path = require("path");
 const stripe = require("stripe")(process.env.STRIPE_KEY);
@@ -8,6 +9,10 @@ const Product = require("../models/product");
 const Order = require("../models/order");
 
 const ITEMS_PER_PAGE = 2;
+=======
+const Product = require("../models/product");
+const Order = require("../models/order");
+>>>>>>> 53b57910080365cf452b44c95a924204bd1b9c13
 
 exports.getProducts = (req, res, next) => {
   const page = +req.query.page || 1;
@@ -140,13 +145,18 @@ exports.postCartDeleteProduct = (req, res, next) => {
     });
 };
 
+<<<<<<< HEAD
 exports.getCheckout = (req, res, next) => {
   let product;
   let total = 0;
+=======
+exports.getCheckoutSuccess = (req, res, next) => {
+>>>>>>> 53b57910080365cf452b44c95a924204bd1b9c13
   req.user
     .populate("cart.items.productId")
     .execPopulate()
     .then((user) => {
+<<<<<<< HEAD
       products = user.cart.items;
       total = 0;
       products.forEach((p) => {
@@ -196,6 +206,8 @@ exports.getCheckoutSuccess = (req, res, next) => {
     .populate("cart.items.productId")
     .execPopulate()
     .then((user) => {
+=======
+>>>>>>> 53b57910080365cf452b44c95a924204bd1b9c13
       const products = user.cart.items.map((i) => {
         return { quantity: i.quantity, product: { ...i.productId._doc } };
       });

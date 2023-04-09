@@ -2,7 +2,11 @@ const mongoose = require("mongoose");
 
 const fileHelper = require("../util/file");
 
+<<<<<<< HEAD
 const { validationResult } = require("express-validator");
+=======
+const { validationResult } = require("express-validator/check");
+>>>>>>> 53b57910080365cf452b44c95a924204bd1b9c13
 
 const Product = require("../models/product");
 
